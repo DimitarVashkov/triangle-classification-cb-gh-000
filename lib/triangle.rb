@@ -7,21 +7,17 @@ class Triangle
   end
 
   def kind
-
-    result = nil
     if @a + @b > @c &&  @b + @c > @a && @a + @c > @b
       if @a == @b && @b == @c
-        result = :equilateral
+        :equilateral
       elsif @a == @b || @b == @c || @a == @c
-        result = :isosceles
+        :isosceles
       else
-        result = :scalene
+        :scalene
       end
     else
       raise TriangleError
     end
-    puts result
-    result
   end
 
 end
