@@ -9,7 +9,7 @@ class Triangle
   def kind
 
     result = nil
-    if @a + @b > @c &&  @b + @c > @a && @b + @c > @a
+    if @a + @b > @c &&  @b + @c > @a && @a + @c > @b
       if @a == @b && @b == @c
         result = :equilateral
       elsif @a == @b || @b == @c || @a == @c
